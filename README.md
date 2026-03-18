@@ -1,5 +1,8 @@
 # EdukaAI OpenCode
 
+[![CI](https://github.com/elgap/edukaai-opencode/actions/workflows/ci.yml/badge.svg)](https://github.com/elgap/edukaai-opencode/actions/workflows/ci.yml)
+[![NPM Version](https://img.shields.io/npm/v/@elgap/edukaai-opencode.svg)](https://www.npmjs.com/package/@elgap/edukaai-opencode)
+
 OpenCode plugin to capture conversations to EdukaAI for training data.
 
 ## Quick Start
@@ -169,20 +172,12 @@ cat .opencode/edukaai-capture.log
    tail -f .opencode/edukaai-capture.log
    ```
 
-### Commands not showing in OpenCode
-
-Make sure command files are copied:
-```bash
-ls -la .opencode/commands/
-```
-
-If missing, reinstall the plugin.
-
 ## Files Created
 
 - `.opencode/edukaai-capture-config.json` - Plugin configuration
 - `.opencode/edukaai-capture.log` - Debug and error logs
-- `.opencode/commands/edukaai-capture-*.md` - OpenCode slash commands (instructions only)
+
+## Contributing
 
 ## License
 
