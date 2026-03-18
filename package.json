@@ -1,0 +1,46 @@
+{
+  "name": "@elgap/edukaai-opencode",
+  "version": "0.1.0-beta.0",
+  "description": "OpenCode plugin to capture conversations to EdukaAI for training data",
+  "bin": {
+    "edukaai-opencode": "bin/edukaai-capture.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "commands"
+  ],
+  "keywords": [
+    "opencode",
+    "edukaai",
+    "capture",
+    "training-data",
+    "plugin"
+  ],
+  "author": "Elgap",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elgap/edukaai-opencode"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build && node bin/postinstall.js",
+    "prepack": "npm run build",
+    "postinstall": "node bin/postinstall.js",
+    "install": "node bin/postinstall.js"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

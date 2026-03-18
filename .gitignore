@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.opencode/node_modules/
+
+# Build artifacts
+dist/
+*.tgz
+*.tar.gz
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test/development files
+.opencode/
+edukaai-activate
+edukaai-deactivate
+opencode.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+docs
