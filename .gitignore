@@ -30,8 +30,7 @@ npm-debug.log*
 .env.local
 .env.*.local
 
-# Package manager files
-package-lock.json
+# Lock files (keep package-lock.json for CI)
 yarn.lock
 pnpm-lock.yaml
 
